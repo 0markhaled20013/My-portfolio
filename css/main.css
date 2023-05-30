@@ -207,7 +207,7 @@ nav li:hover::after{right: 0;}
         font-size: 26px;
     }
     .main span{font-size: 27px;}
-    .services{margin-top: 20px;}
+    .services{margin: 20px;}
     .projects {
         background-image: var(--linear);
         padding: 0.1px 20px 40px;
