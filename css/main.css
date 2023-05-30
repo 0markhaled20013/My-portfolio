@@ -197,22 +197,7 @@ nav li:hover::after{right: 0;}
     .back .links ul li{color: #fff;}
     .back .links ul li:hover{color: #000945;}
 }
-@media(max-width:550px)
-{
-    .main img{opacity:.7; width: 300px;}
-    .main{
-        align-items: flex-start;
-        padding-left: 20px;
-        line-height: 1.5;
-        font-size: 26px;
-    }
-    .main span{font-size: 27px;}
-    .services{margin: 20px;}
-    .projects {
-        background-image: var(--linear);
-        padding: 0.1px 20px 40px;
-    }
-}
+
 /* end main */
 /* start serv */
 .serv{padding-top: 0.1px;background-color: #eff6ff; padding-bottom: 40px;}
@@ -272,7 +257,22 @@ nav li:hover::after{right: 0;}
 
 }
 .projects .box:hover a{bottom: 0; height: 110%;}
-
+@media(max-width:550px)
+{
+    .main img{opacity:.7; width: 300px;}
+    .main{
+        align-items: flex-start;
+        padding-left: 20px;
+        line-height: 1.5;
+        font-size: 26px;
+    }
+    .main span{font-size: 27px;}
+    .services{margin-top: 20px;}
+    .projects {
+        background-image: var(--linear);
+        padding: 0.1px 20px 40px;
+    }
+}
 
 
 
