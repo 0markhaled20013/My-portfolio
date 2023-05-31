@@ -219,6 +219,8 @@ nav li:hover::after{right: 0;}
     font-size: 32px;
     padding-top: 5px;
 }
+/* end serv */
+/*  start projects*/
 
 .projects{
     background-image: var(--linear);
@@ -273,7 +275,65 @@ nav li:hover::after{right: 0;}
         padding: 0.1px 20px 40px;
     }
 }
+/* end projrcts */
+/* start skills */
+.skills details {
+    margin: 20px 50px;
+}
+.skills{padding-top: 0.1px;background-color: #eff6ff; padding-bottom: 40px;}
+.skills .details{
+    margin: 20px 50px;
+}
+.skills .details .box{
 
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--br);
+    line-height: 2;
+    box-shadow: var(--shadow);
+    color: #02315d;
+    transition: var(--trans);
+}
+.skills .details .box:hover{transform: translateY(-10px);}
+.skills .details i{
+    font-size: 32px;
+    padding-top: 5px;
+}
+
+@media (max-width: 550px){
+    .skills .details {
+    margin: 20px;
+    }
+}
+.information{background-image: var(--linear); padding-top: 0.1px; padding-bottom: 40px;}
+.information .box{
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+
+}
+/* start footer */
+
+.myfooter
+{
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    font-style: italic;
+    padding: 10px;
+}
+.myfooter span{font-size: 18px;}
+.myfooter i{color: white; margin: 10px; transition: .3s;}
+.myfooter .face:hover{color: #1877F2;}
+.myfooter .insta:hover{color: #dd2a7b;}
+.myfooter .gmail:hover{color: #ea4335;}
+.myfooter .whats:hover{color: #25D366;}
+/* end footer */
 
 
 
