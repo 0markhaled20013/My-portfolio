@@ -39,7 +39,7 @@ html{scroll-behavior: smooth;}
     text-align: center;
     width: fit-content;
     position: relative;
-    padding: 8px 18px;
+    padding: 10px 18px;
     z-index: 1;
     transition: .5s;
     color: var(--text-color);
@@ -149,7 +149,7 @@ nav li:hover::after{right: 0;}
 /* end nav */
 /* start main */
 .main{
-    height: 100vh;
+    height: 100dvh;
     background-image: var(--linear);
     padding-left: 50px;
     line-height: 2;
@@ -262,19 +262,12 @@ nav li:hover::after{right: 0;}
 .projects .box:hover a{bottom: 0; height: 110%;}
 @media(max-width:550px)
 {
-    .main img{
-    opacity: .9;
-    width: 300px;
-    bottom: 48%;
-    border-radius: 50%;
-    right: 5%;
-    }
+    .main img{opacity:.7; width: 220px;}
     .main{
         align-items: flex-start;
         padding-left: 20px;
         line-height: 1.5;
         font-size: 26px;
-        padding-top: 365px;
     }
     .main span{font-size: 27px;}
     .services{margin: 20px;}
