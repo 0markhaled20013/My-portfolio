@@ -17,6 +17,22 @@
     #2f70af mmkn a5leh lon text
     */
 }
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar {    /*lazm tdeha width 34an tzhr 8er kda htzhr ak3dya bta3t al browser*/
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,
+    #02315d 40%,
+    #2f70af 70%,
+    #ddd
+    );
+}
+
+/* scroll bar */
+/* scroll bar */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,9 +42,11 @@ ul{list-style: none;}
 img{max-width: 100%;}
 body{
     font-family: 'Cairo', sans-serif;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Prata', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Itim', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Prata', serif;
+font-family: 'K2D', sans-serif;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,6 +61,8 @@ html{scroll-behavior: smooth;}
     z-index: 1;
     transition: .5s;
     color: var(--text-color);
+    font-family: 'Prata', serif;
+
 }
 .white{color: #fff;}
 .title::before , .title::after{
@@ -94,6 +114,8 @@ nav .back{
     color: #ddd;
     z-index: 2;
     background-image: var(--linear);
+    font-family: 'Prata', serif;
+
 }
 nav .name{
     font-weight: bold;
@@ -157,6 +179,8 @@ nav li:hover::after{right: 0;}
     align-items: center;
     font-size: 31px;
     color: #fff;
+    font-family: 'Prata', serif;
+
 }
 .main img{
     position: absolute;
@@ -172,6 +196,7 @@ nav li:hover::after{right: 0;}
     padding-left: 5px;
     letter-spacing: 2px;
 }
+.main .circle {display: none;}
 @media(max-width:1080px)
 {
     .main img{opacity:.5;}
@@ -180,7 +205,7 @@ nav li:hover::after{right: 0;}
 {
     .main{
         align-items: flex-start;
-        padding-top: 305px;
+        padding-top: 360px;
     }
     .main img{width: 375px;}
     nav .back {height: 60px;}
@@ -194,11 +219,24 @@ nav li:hover::after{right: 0;}
         top: 50px;
         left: 0;
         z-index: 5;
+        background-image: var(--linear);
     }
     .back .links ul li{color: #fff;}
     .back .links ul li:hover{color: #000945;}
 }
-
+@media(max-width:550px)
+{
+    .main img{opacity:.8; width: 220px;}
+    .main{
+        align-items: flex-start;
+        padding-left: 20px;
+        line-height: 1.5;
+        font-size: 26px;
+    }
+    .main span{font-size: 27px;}
+    .main .full {display: none;}
+    .main .circle {display: block; width: 325px; bottom: 45%; right: 10%;}
+}
 /* end main */
 /* start serv */
 .serv{padding-top: 0.1px;background-color: #eff6ff; padding-bottom: 40px;}
@@ -220,6 +258,7 @@ nav li:hover::after{right: 0;}
     font-size: 32px;
     padding-top: 5px;
 }
+@media(max-width:550px){.services{margin: 20px;}}
 /* end serv */
 /*  start projects*/
 
@@ -262,15 +301,6 @@ nav li:hover::after{right: 0;}
 .projects .box:hover a{bottom: 0; height: 110%;}
 @media(max-width:550px)
 {
-    .main img{opacity:.7; width: 220px;}
-    .main{
-        align-items: flex-start;
-        padding-left: 20px;
-        line-height: 1.5;
-        font-size: 26px;
-    }
-    .main span{font-size: 27px;}
-    .services{margin: 20px;}
     .projects {
         background-image: var(--linear);
         padding: 0.1px 20px 40px;
@@ -331,6 +361,8 @@ nav li:hover::after{right: 0;}
     border-top: 1px solid #ccc;
     font-style: italic;
     padding: 10px;
+    font-family: 'Prata', serif;
+
 }
 .myfooter span{font-size: 18px;}
 .myfooter i{color: white; margin: 10px; transition: .3s;}
@@ -339,6 +371,9 @@ nav li:hover::after{right: 0;}
 .myfooter .gmail:hover{color: #ea4335;}
 .myfooter .whats:hover{color: #25D366;}
 /* end footer */
+/*  */
+/*  */
+/*  */
 
 
 
